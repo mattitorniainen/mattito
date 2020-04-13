@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndDev</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+            <img src="/images/cover1.png" alt="logo" class="logo">
+            </a>
+        <nav>
+            <a href="home" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+            </a>
+
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop">
+                    <img src="images/exit.svg" alt="exit menu">
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+        </header>
+
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+
+            <h1>Sairaan Siistit Kotisivut</h1>
+                <p class="subhead">Näitä sivuja kun duunasi niin kyllä hiki virtasi! Takapuoleen sain uuden värityksen, mutta se vain korostaa kasvojani!</p>
+
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-deskptop"> 
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="calendar icon">
+                        <p>Tästä näet varauskalenterin tilanteen. Kyllä meillä tyhjää on!</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="calendar icon">
+                        <p>Maksutavoiksi meillä käy tavalliset muovikortit ja paperirahat. Joskus myös pimeestikkin.</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="calendar icon">
+                        <p>Soittaakin meille voit. Vastataan jos keretään tai jaksetaan, useimmiten emme vastaa.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                    <img src="images/user1.png" alt="user1">
+                    <blockquote>Ihan sikamahtavaa! Tämän sivun käyttäminen on niiiiin super iisii kun opin käyttämään html-koodia!</blockquote>
+                    <figcaption>Jonna 16v.</figcaption>
+                </figure>
+                </li>
+                <li>
+                    <figure>
+                    <img src="images/user2.png" alt="user1">
+                    <blockquote>Muistan sen kuin eilisen kun opin käyttämään ATK:ta! Olin silloin nuori ja villi, nyt vanha ja raihnainen mutta niin vaan hommat sujuu!</blockquote>
+                    <figcaption>Joni 34v.</figcaption>
+                </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Ota yhteyttä Äkkiä!</h2>
+        <a href="#" class="cta">Painakkee tästä!</a>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/cover1.png" alt="logo-white">
+                </a>
+                <p class="address">Maailman Napa, 70666 <br>Suami</p>
+                <ul class="footer-links">
+                    <li> <a href="https://en.wikipedia.org/wiki/Terms_of_service">Termssit</a></li>
+                    <li> <a href="https://en.wikipedia.org/wiki/Privacy_policy">Privasy Politi</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+    
+        menu.addEventListener("click", function(e) {
+            nav.classList.toggle("hide-mobile")
+            e.preventDefault();
+        });
+
+        exit.addEventListener("click", function(e) {
+            nav.classList.add("hide-mobile")
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>
